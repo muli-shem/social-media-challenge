@@ -1,0 +1,198 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Dashboard Container */
+  #container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header */
+  header {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; */
+  }
+  .heading{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+
+  }
+  .part{
+    display: flex;
+    justify-content: center;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  .toggle {
+    display: flex;
+    align-items: center;
+  }
+  
+  .toggle input {
+    margin-left: 10px;
+  }
+  
+  /* Cards Section */
+  #section1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  #section1 .facebook {
+    border-top: 5px solid #3b5998;
+  }
+  
+  #section1 .twitter {
+    border-top: 5px solid #1da1f2;
+  }
+  
+  #section1 .instagram {
+    border-top: 5px solid #e1306c;
+  }
+  
+  #section1 .youtube {
+    border-top: 5px solid #ff0000;
+  }
+  
+  #section1 > div {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #section1 h2 {
+    margin: 10px 0;
+  }
+  
+  #section1 p {
+    margin: 5px 0;
+  }
+  
+  #Positive-Entry {
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  #Negative-Entry {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  /* Overview Section */
+  .Overview {
+    margin-top: 40px;
+  }
+  
+  .Overview h2 {
+    margin-bottom: 20px;
+  }
+  
+  .Overview1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .rate{
+    display: flex;
+    justify-content: space-between;
+  }
+  .rate1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .Overview1 .image {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .Overview1 .facebook {
+    border-top: 5px solid #3b5998;
+  }
+  
+  .Overview1 .twitter {
+    border-top: 5px solid #1da1f2;
+  }
+  
+  .Overview1 .instagram {
+    border-top: 5px solid #e1306c;
+  }
+  
+  .Overview1 .youtube {
+    border-top: 5px solid #ff0000;
+  }
+  
+  .Overview1 h3 {
+    margin: 10px 0;
+  }
+  
+  .Overview1 p {
+    margin: 5px 0;
+  }
+  
+  /* Dark Mode */
+  body.dark-mode {
+    background-color: #1e1e1e;
+    color: #f0f2f5;
+  }
+  
+  body.dark-mode #section1 > div,
+  body.dark-mode .Overview1 .image {
+    background-color: #333;
+    color: #f0f2f5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  }
+  
+  body.dark-mode .toggle input {
+    background-color: #333;
+  }
+  
+  /* Attribution */
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    #section1, .Overview1 {
+      flex-direction: column;
+    }
+  }
+  
